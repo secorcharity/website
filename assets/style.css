@@ -174,7 +174,7 @@ blockquote.motto small{display:block;font-family:var(--sans);font-style:normal;f
 .bank-row{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 0;border-bottom:1px dashed var(--line)}
 .bank-row:last-of-type{border-bottom:0}
 .bank-row small{display:block;font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:700}
-.bank-row code{font:600 1.05rem/1.3 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:var(--green-900);word-break:break-all}
+.bank-row code{font:700 1.08rem/1.3 var(--sans);letter-spacing:.03em;font-variant-numeric:tabular-nums;color:var(--green-900);word-break:break-all}
 .copy{border:1px solid var(--line);background:#fff;border-radius:10px;padding:8px 12px;font:700 .8rem var(--sans);color:var(--green-700);cursor:pointer;white-space:nowrap}
 .copy:hover{background:var(--green-100)}
 .copy.ok{background:var(--green-700);color:#fff;border-color:var(--green-700)}
