@@ -320,3 +320,6 @@ dialog.legal .dlg-close{position:absolute;top:12px;right:12px;background:var(--s
   .bank-row{flex-wrap:wrap}
 }
 @media (max-width:560px){.route{flex-basis:48px}.flags{gap:10px;font-size:.92rem}.hero .eyebrow::before{display:none}}
+/* images fill their cell without changing layout when they load (keeps #anchors stable) */
+.project-media button{position:relative;min-height:0}
+.project-media img{position:absolute;inset:0}
