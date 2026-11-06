@@ -60,12 +60,12 @@ var SECOR_CONFIG = {
     if (c.paypalUrl) pp.href = c.paypalUrl;
     if (!c.paypalUrl) $("#t-paypal").hidden = true;
     if (c.facebookUrl) $("#fbLink").href = c.facebookUrl;
-    var r = c.romania, hasRo = !!(r.name && (r.cif || r.iban));
-    $("#roPending").hidden = hasRo;
-    $("#t-ro").hidden = !hasRo;
+    var r = c.romania, box = $("#roDetails");
+    var hasRo = !!(box && r.name && (r.cif || r.iban));
+    if ($("#roPending")) $("#roPending").hidden = hasRo;
+    if ($("#t-ro")) $("#t-ro").hidden = !hasRo;
     $(".tabs").hidden = !c.paypalUrl && !hasRo;
-    var box = $("#roDetails");
-    box.hidden = !hasRo;
+    if (box) box.hidden = !hasRo;
     if (hasRo) {
       box.innerHTML = "";
       [["Asociația", r.name], ["CIF", r.cif], ["IBAN (RON)", r.iban], ["Banca", r.bank]].forEach(function (row, i) {
