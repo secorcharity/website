@@ -6,7 +6,7 @@
 var SECOR_CONFIG = {
   bank: { holder: "SECOR e.V.", iban: "DE20 7005 3070 0032 8988 76", bic: "BYLADEM1FFB", bankName: "Sparkasse Fürstenfeldbruck", reference: "Spende SECOR" },
   paypalUrl: "",          // e.g. https://www.paypal.com/donate/?hosted_button_id=XXXX
-  facebookUrl: "",        // e.g. https://www.facebook.com/asociatiasecor
+  facebookUrl: "https://www.facebook.com/profile.php?id=61576876812906",        // e.g. https://www.facebook.com/asociatiasecor
   romania: {              // Romanian partner (for 3.5% / 20% / RON donations)
     name: "", cif: "", iban: "", bank: "", form230Url: ""
   }
