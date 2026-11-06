@@ -62,6 +62,8 @@ var SECOR_CONFIG = {
     if (c.facebookUrl) $("#fbLink").href = c.facebookUrl;
     var r = c.romania, hasRo = !!(r.name && (r.cif || r.iban));
     $("#roPending").hidden = hasRo;
+    $("#t-ro").hidden = !hasRo;
+    $(".tabs").hidden = !c.paypalUrl && !hasRo;
     var box = $("#roDetails");
     box.hidden = !hasRo;
     if (hasRo) {
